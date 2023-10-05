@@ -1,16 +1,19 @@
 <template>
   <div class="main">
-      <h1>todoItem</h1>
-      <div class="input-group mb-3" style="width: 50%;">
-        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+    <h1>ToDoList</h1>
+    <div class="container">
+      <div class="row">
+        <div class="input-group mb-3 justify-content-center mx-auto">
+          <input type="text" class="form-control" placeholder="new todoList" aria-label="new todoList" aria-describedby="button-addon2">
+          <input type="datetime-local" class="form-control" name="time" id="time">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Summit</button>
+        </div>
       </div>
+    </div>
   </div>
 </template>
 
 <script>
-  export default {
-}
 </script>
 
 <style scoped>
@@ -18,5 +21,12 @@
   text-align: center;
   margin-top: 10px;
   margin-bottom: 30px;
+  border: 10px;
+}
+.container{
+  margin-top: 45px;
+}
+.mt-10{
+  margin-top: 10px;
 }
 </style>
